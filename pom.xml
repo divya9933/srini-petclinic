@@ -382,6 +382,19 @@
             </plugin>
         </plugins>
     </build>
+
+   <distributionManagement>
+  <snapshotRepository>
+    <id>artifact-repo-tmg</id>
+    <url>s3://artifact-repo-tmg/snapshot</url>
+  </snapshotRepository>
+  <repository>
+    <id>artifact-repo-tmg</id>
+    <url>s3://artifact-repo-tmg/release</url>
+  </repository>
+</distributionManagement>
+
+
     <reporting>
         <plugins>
 
